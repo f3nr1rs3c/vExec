@@ -29,3 +29,7 @@ pip install pyvmomi
 python3 vexec.py --host 10.5.2.111 --user administrator@tellynet.ad --password August1990password --vm "Windows-Server01" --guest-user "Administrator" --guest-pass "WinPass123" --cmd "C:\\Windows\\System32\\cmd.exe" --args "/c echo Hello from vCollector!" --timeout 30
 
 ```
+## ⚠️ Uyarı
+- Bu betik SSL doğrulamasını devre dışı bırakır ve uzaktan komut yürütür.
+- Yalnızca test veya laboratuvar ortamlarında kullanılması önerilir.
+- Üretim ortamında çalıştırılacaksa sertifika doğrulaması ve kimlik yönetimi mutlaka etkinleştirilmelidir.
